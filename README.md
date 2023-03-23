@@ -1,5 +1,7 @@
 Wustate
 
+Attention, ce plugin utilise des script de powershell galaxy permetant de verifier si il y a besoin de reboot et de visioner l'état des MAJ windows
+
 C'est un plugin permettant de remonter les kb qui non pas encore était installé avec un message OK ou NOK pour simplifier la recherche dans le multicritère et indique si le poste à besoin de restart ou non
 
 1er colonne : date
