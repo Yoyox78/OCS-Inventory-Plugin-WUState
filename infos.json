@@ -1,0 +1,13 @@
+{
+"displayName" : "wustate",
+"author" : ["Yoann LECLERC"],
+"contributor" : [],
+"supportedAgent" : ["Windows"],
+"version" : "1",
+"licence" : "GPLv2",
+"description" : 
+    {
+        "fr" : "Liste les MAJ et l'état de windows update",
+		"en" : "Lists the updates and the status of windows update"
+    }
+}

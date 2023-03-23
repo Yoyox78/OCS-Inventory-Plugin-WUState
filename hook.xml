@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hookstore>
+
+    <hook type="lang">
+		<value>en_GB</value>
+        <value>fr_FR</value>
+    </hook>
+
+    <hook type="cdentry">
+        <identifier>cd_wustate</identifier>
+        <translation>50202</translation>
+        <category>other</category>
+        <available>wustate</available>
+    </hook>
+</hookstore>
