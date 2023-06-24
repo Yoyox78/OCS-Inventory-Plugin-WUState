@@ -41,6 +41,7 @@ $WUTitre = $Winupdate.title | select-string -pattern 'KB[0-9]+'
 $WUKB = $WUTitre.matches.value | Select-Object -Unique | Out-String 
 $WUKB = $WUKB -replace '\s',' '
 $WUReboot = (Test-PendingReboot -SkipConfigurationManagerClientCheck -Detailed).WindowsUpdateAutoUpdate
+$Server = (Get-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\" -Name "WUServer").WUServer
 
 if ($WUTitre.Count -gt 0)
 {
@@ -57,6 +58,7 @@ $xml += "<DATE>$(Get-Date -Format "dd/MM/yyyy_HH:mm")</DATE>`n"
 $xml += "<STATE>${WUpdate}</STATE>`n"
 $xml += "<REBOOT>${WUReboot}</REBOOT>`n"
 $xml += "<MAJ>${WUKB}</MAJ>`n"
+$xml += "<SERVER>${Server}</SERVER>`n"
 $xml += "</WUSTATE>"
 
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8

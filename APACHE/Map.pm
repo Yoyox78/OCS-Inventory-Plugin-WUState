@@ -26,7 +26,8 @@ $DATA_MAP{wustate} = {
        DATE => {},
        STATE => {},
        REBOOT => {},
-	    MAJ => {}
+	   MAJ => {},
+	   SERVER => {}
    }
 };
 1;

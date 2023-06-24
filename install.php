@@ -21,6 +21,7 @@ function extension_install_wustate()
         `STATE` VARCHAR(255) DEFAULT NULL,
         `REBOOT` VARCHAR(255) DEFAULT NULL,
 		`MAJ` VARCHAR(255) DEFAULT NULL,
+		`SERVER` VARCHAR(255) DEFAULT NULL,
         PRIMARY KEY (`ID`, `HARDWARE_ID`)
         ) ENGINE=INNODB;"
     );

@@ -46,7 +46,8 @@ $list_fields = array(
                     'Date de verification' => 'DATE',
                     'Etat de MAJ Windows update' => 'STATE',
                     'Besoin de restart' => 'REBOOT',
-					'KB concernée' => 'MAJ'
+					'KB concernée' => 'MAJ',
+					'Serveur WSUS du poste' => 'SERVER'
 					);
 // columns to include at any time and default columns
 $list_col_cant_del = $list_fields;
