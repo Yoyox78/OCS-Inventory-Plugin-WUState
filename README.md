@@ -16,6 +16,9 @@ false : n'est pas en attente de reboot
 4eme colonne : 
 les KB concernées en attente d'installation ou de download et installation
 
+5eme colonne : 
+Le nom du serveur  présent en base de registre
+
 
 Je supprime les doublons pour eviter d'avoir la même KB affichées plusieurs fois
 Je me base sur le plugin WindowsUpdate de powershell galaxy
