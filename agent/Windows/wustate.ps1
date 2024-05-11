@@ -41,7 +41,7 @@ if (-Not (Get-Module -ListAvailable -Name PendingReboot))
 }
 
 # Récupère la liste des MAJ
-$Winupdate = Get-WindowsUpdate
+$Winupdate = Get-WindowsUpdate -MicrosoftUpdate -UpdateID 3da21691-e39d-4da6-8a4b-b43877bcb1b7
 # On prend les version de KB
 $WUTitre = $Winupdate.title | select-string -pattern 'KB[0-9]+'
 # On met en variable les valeur récupéré avec la regex
